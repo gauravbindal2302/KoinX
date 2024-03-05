@@ -1,7 +1,7 @@
 export default function YouMayAlsoLike() {
   return (
     <>
-      <div className="YouMayAlsoLike bg-[#f8fafc] rounded-lg lg:p-6 p-4 flex flex-col gap-4">
+      <div className="YouMayAlsoLike bg-[#f8fafc] rounded-lg lg:p-12 p-5 flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">You May Also Like</h1>
         <div className="you-may-also-like flex overflow-x-auto gap-2 lg:pb-3 pb-2">
           <div className="card flex flex-col gap-1 border px-6 py-4 rounded-lg">

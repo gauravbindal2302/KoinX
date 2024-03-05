@@ -65,11 +65,13 @@ export default function Team() {
                   alt={member.name}
                   className="h-28 w-24 rounded-lg"
                 />
-                <span>{member.name}</span>
-                <p className="mt-[-8px] mb-3">{member.designation}</p>
+                <span className="font-bold">{member.name}</span>
+                <p className="mt-[-8px] mb-3 text-sm font-semibold text-gray-500">
+                  {member.designation}
+                </p>
               </div>
               <div className="col-2 lg:w-5/6 flex justify-center items-center">
-                <p>{member.message}</p>
+                <p className="lg:text-left text-center">{member.message}</p>
               </div>
             </div>
           ))}

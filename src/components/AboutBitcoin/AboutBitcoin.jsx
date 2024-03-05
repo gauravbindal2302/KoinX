@@ -5,7 +5,7 @@ export default function AboutBitcoin() {
         <h1 className="text-2xl font-semibold">About Bitcoin</h1>
         <div className="row-1 border-b">
           <h1 className="text-lg font-medium">What is Bitcoin?</h1>
-          <p className="lg:py-2">
+          <p className="py-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
             aperiam recusandae molestias fugit amet omnis delectus labore
             sapiente hic totam illum sunt culpa accusamus expedita, magnam
@@ -26,7 +26,7 @@ export default function AboutBitcoin() {
             alias reprehenderit incidunt qui repellat, enim tenetur possimus
             eius ullam tempora nobis quos.
           </p>
-          <p className="lg:pb-2">
+          <p className="pb-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum
             fuga ab eum quis minus quam quas neque animi provident corrupti
             alias reprehenderit incidunt qui repellat, enim tenetur possimus
@@ -35,23 +35,31 @@ export default function AboutBitcoin() {
         </div>
         <div className="row-3 border-b">
           <h1 className="text-2xl font-semibold">Already Holding Bitcoin?</h1>
-          <div className="flex lg:py-2">
-            <div className="card-1 flex w-1/2">
-              <div className="col-1">
-                <img src="" alt="" />
+          <div className="flex lg:flex-row flex-col lg:py-2 py-4 gap-4">
+            <div className="card-1 flex bg-blue-100 p-6 rounded-lg gap-6">
+              <div className="col-1 lg:w-auto w-1/2">
+                <img
+                  src="https://yt3.googleusercontent.com/ytc/AIdro_k2wsQa2j9sAhjS25DyZxrhAGDJWtNZBYcLVd3uqQ=s900-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  className="h-32 w-full rounded-lg"
+                />
               </div>
-              <div className="col-2 flex flex-col">
+              <div className="col-2 lg:w-auto w-1/2 flex flex-col justify-center gap-4">
                 <span>Calculate your Profits</span>
-                <button>Check Now</button>
+                <button className="p-1 bg-white rounded-lg">Check Now</button>
               </div>
             </div>
-            <div className="card-2 flex w-1/2">
-              <div className="col-1">
-                <img src="" alt="" />
+            <div className="card-2 flex bg-blue-100 p-6 rounded-lg gap-6">
+              <div className="col-1 lg:w-auto w-1/2">
+                <img
+                  src="https://yt3.googleusercontent.com/ytc/AIdro_k2wsQa2j9sAhjS25DyZxrhAGDJWtNZBYcLVd3uqQ=s900-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  className="h-32 w-full rounded-lg"
+                />
               </div>
-              <div className="col-2 flex flex-col">
-                <span>Calculate your Profits</span>
-                <button>Check Now</button>
+              <div className="col-2 lg:w-auto w-1/2 flex flex-col justify-center gap-4">
+                <span>Calculate your tax liability</span>
+                <button className="p-1 bg-white rounded-lg">Check Now</button>
               </div>
             </div>
           </div>

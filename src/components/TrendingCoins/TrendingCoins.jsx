@@ -22,7 +22,7 @@ const TrendingCoins = () => {
   }, []);
 
   return (
-    <div className="trending-coins rounded-lg bg-[#f8fafc] lg:p-6 flex flex-col gap-4">
+    <div className="trending-coins rounded-lg bg-[#f8fafc] lg:p-6 p-4 flex flex-col gap-4">
       <h1 className="text-xl font-semibold">Trending Coins (24h)</h1>
       {trendingCoins.map((coin, index) => (
         <div className="trending flex justify-between" key={index}>

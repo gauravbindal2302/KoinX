@@ -1,16 +1,16 @@
 export default function GetStarted() {
   return (
     <>
-      <div className="get-started bg-[#1d4ed8] text-center lg:p-8 rounded-lg">
-        <div className="heading lg:mb-4">
-          <h1 className="text-xl font-semibold text-[#f1f5f9] leading-relaxed">
+      <div className="get-started bg-[#1d4ed8] lg:mt-0 mt-4 text-center lg:p-8 p-4 rounded-lg">
+        <div className="heading mb-4">
+          <h1 className="lg:text-xl text-2xl font-semibold text-[#f1f5f9] leading-relaxed">
             Get Started with KoinX
           </h1>
-          <h1 className="text-xl font-semibold text-[#f1f5f9] leading-relaxed">
+          <h1 className="lg:text-xl text-2xl font-semibold text-[#f1f5f9] leading-relaxed">
             for FREE
           </h1>
         </div>
-        <p className="text-[#e5e7eb] lg:mb-6">
+        <p className="text-[#e5e7eb] mb-6">
           With our range of features that you can equip for free, KoinX allows
           you to be more educated and aware of your tax reports.
         </p>
@@ -21,7 +21,7 @@ export default function GetStarted() {
             className="h-36 w-36"
           />
         </div>
-        <button className="bg-[#f1f5f9] rounded-lg hover:bg-[#e5e7eb] lg:p-2 lg:px-6">
+        <button className="bg-[#f1f5f9] rounded-lg hover:bg-[#e5e7eb] p-2 px-6">
           Get Started for FREE
         </button>
       </div>

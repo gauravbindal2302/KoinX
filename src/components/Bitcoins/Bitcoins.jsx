@@ -22,13 +22,13 @@ export default function Bitcoins() {
           <AboutBitcoin />
           <Tokenomics />
           <Team />
-          <YouMayAlsoLike />
         </div>{" "}
-        <div className="lg:w-1/4 hidden flex flex-col gap-6">
+        <div className="lg:w-1/4 flex flex-col gap-6">
           <GetStarted />
           <TrendingCoins />
         </div>
-      </div>
+      </div>{" "}
+      <YouMayAlsoLike />
     </>
   );
 }
