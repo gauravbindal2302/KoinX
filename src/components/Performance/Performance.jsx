@@ -3,47 +3,47 @@ import React from "react";
 export default function Performance() {
   return (
     <>
-      <div className="performance-section bg-[#f8fafc] rounded-lg lg:p-6 flex flex-col gap-4">
+      <div className="performance-section bg-[#f8fafc] rounded-lg lg:p-6 p-4 flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">Performance</h1>
         <div className="ranges flex flex-col gap-4">
           <div className="range-1 flex items-center justify-between">
-            <div className="left flex flex-col w-1/6 gap-1">
+            <div className="left flex flex-col lg:w-1/6 w-1/3 gap-1">
               <span className="text-[#475569] font-semibold">Today's Low</span>
               <span className="font-semibold text-sm">46,930.22</span>
             </div>
-            <div className="middle w-4/6">
+            <div className="middle lg:w-4/6 w-1/3">
               <input
                 type="range"
                 className="slider-middle w-full cursor-pointer"
               />{" "}
             </div>
-            <div className="right flex flex-col w-1/6 text-right gap-1">
+            <div className="right flex flex-col lg:w-1/6 w-1/2 text-right gap-1">
               <span className="text-[#475569] font-semibold">Today's High</span>
               <span className="font-semibold text-sm">49,343.83</span>
             </div>
           </div>
           <div className="range-2 flex items-center justify-between">
-            <div className="left flex flex-col w-1/6 gap-1">
+            <div className="left flex flex-col lg:w-1/6 w-1/2 gap-1">
               <span className="text-[#475569] font-semibold">52W Low</span>
               <span className="font-semibold text-sm">16,930.22</span>
             </div>
-            <div className="middle w-4/6">
+            <div className="middle lg:w-4/6 w-1/2">
               <input
                 type="range"
                 className="slider-middle w-full cursor-pointer"
               />{" "}
             </div>
-            <div className="right flex flex-col w-1/6 text-right gap-1">
+            <div className="right flex flex-col lg:w-1/6 w-1/2 text-right gap-1">
               <span className="text-[#475569] font-semibold">52W High</span>
               <span className="font-semibold text-sm">49,743.83</span>
             </div>
           </div>{" "}
         </div>
 
-        <div className="fundamentals flex flex-col gap-2 lg:mt-4">
+        <div className="fundamentals flex flex-col gap-2 lg:mt-4 mt-6">
           <h1 className="text-lg font-semibold">Fundamentals</h1>
-          <div className="tables flex gap-8 text-sm font-semibold tracking-wide">
-            <div className="table-1 w-1/2">
+          <div className="tables flex lg:flex-row flex-col lg:gap-8 text-sm font-semibold tracking-wide">
+            <div className="table-1 lg:w-1/2">
               <table className="w-full">
                 <tbody>
                   <tr>
@@ -89,7 +89,7 @@ export default function Performance() {
                 </tbody>
               </table>
             </div>
-            <div className="table-2 w-1/2 flex justify-end">
+            <div className="table-2 lg:w-1/2 flex justify-end">
               <table className="w-full">
                 <tbody>
                   <tr>
@@ -131,10 +131,10 @@ export default function Performance() {
                     </td>
                   </tr>
                   <tr>
-                    <td className="py-3 border-b border-[#9ca3af] text-[#6b7280]">
+                    <td className="py-3 lg:border-b lg:border-[#9ca3af] text-[#6b7280]">
                       All-Time Low
                     </td>
-                    <td className="py-3 text-right border-b border-[#9ca3af] text-xs">
+                    <td className="py-3 text-right lg:border-b lg:border-[#9ca3af] text-xs">
                       <div className="flex flex-col">
                         <div className="flex gap-2 justify-end">
                           <span>$67.81</span>

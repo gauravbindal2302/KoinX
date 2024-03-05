@@ -14,8 +14,8 @@ export default function Bitcoins() {
     <>
       {" "}
       <Navbar />
-      <div className="bitcoins-page w-screen bg-[#e2e8f0] flex gap-4 lg:p-12">
-        <div className="lg:w-3/4 flex flex-col gap-4">
+      <div className="bitcoins-page w-screen bg-[#e2e8f0] flex lg:flex-row flex-col p-4 lg:gap-4 lg:p-12">
+        <div className="lg:w-3/4 w-full flex flex-col gap-4">
           {/*<BitcoinGraph />*/}
           <Performance />
           <Sentiment />
@@ -24,7 +24,7 @@ export default function Bitcoins() {
           <Team />
           <YouMayAlsoLike />
         </div>{" "}
-        <div className="lg:w-1/4 flex flex-col gap-6">
+        <div className="lg:w-1/4 hidden flex flex-col gap-6">
           <GetStarted />
           <TrendingCoins />
         </div>

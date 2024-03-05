@@ -1,9 +1,9 @@
 export default function YouMayAlsoLike() {
   return (
     <>
-      <div className="YouMayAlsoLike bg-[#f8fafc] rounded-lg lg:p-6 flex flex-col gap-4">
+      <div className="YouMayAlsoLike bg-[#f8fafc] rounded-lg lg:p-6 p-4 flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">You May Also Like</h1>
-        <div className="you-may-also-like flex overflow-x-auto gap-2 pb-3">
+        <div className="you-may-also-like flex overflow-x-auto gap-2 lg:pb-3 pb-2">
           <div className="card flex flex-col gap-1 border px-6 py-4 rounded-lg">
             <div className="row-1 flex justify-center items-center gap-3">
               <img
@@ -179,7 +179,7 @@ export default function YouMayAlsoLike() {
           </div>
         </div>
         <h1 className="text-2xl font-semibold">Trending Coins</h1>{" "}
-        <div className="trending-coins flex overflow-x-auto gap-2 pb-3">
+        <div className="trending-coins flex overflow-x-auto gap-2 lg:pb-3 pb-2">
           <div className="card flex flex-col gap-1 border px-6 py-4 rounded-lg">
             <div className="row-1 flex justify-center items-center gap-3">
               <img

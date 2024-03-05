@@ -1,7 +1,7 @@
 export default function AboutBitcoin() {
   return (
     <>
-      <div className="about-bitcoin-section bg-[#f8fafc] rounded-lg lg:p-6 flex flex-col gap-4">
+      <div className="about-bitcoin-section bg-[#f8fafc] rounded-lg lg:p-6 p-4 flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">About Bitcoin</h1>
         <div className="row-1 border-b">
           <h1 className="text-lg font-medium">What is Bitcoin?</h1>

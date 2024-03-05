@@ -46,7 +46,7 @@ const team = [
 export default function Team() {
   return (
     <>
-      <div className="team-section bg-[#f8fafc] rounded-lg lg:p-6 flex flex-col gap-4">
+      <div className="team-section bg-[#f8fafc] rounded-lg lg:p-6 p-4 flex flex-col gap-4">
         <h1 className="text-2xl font-semibold">Team</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
@@ -57,18 +57,18 @@ export default function Team() {
           {team.map((member, index) => (
             <div
               key={index}
-              className="team flex rounded-lg bg-[#e0f2fe] lg:p-4 gap-4"
+              className="team lg:flex rounded-lg bg-[#e0f2fe] p-4 gap-4"
             >
-              <div className="col-1 w-1/6 flex flex-col justify-center items-center gap-1">
+              <div className="col-1 lg:w-1/6 flex flex-col justify-center items-center gap-2">
                 <img
                   src={member.profilePic}
                   alt={member.name}
                   className="h-28 w-24 rounded-lg"
                 />
                 <span>{member.name}</span>
-                <p>{member.designation}</p>
+                <p className="mt-[-8px] mb-3">{member.designation}</p>
               </div>
-              <div className="col-2 w-5/6 flex justify-center items-center">
+              <div className="col-2 lg:w-5/6 flex justify-center items-center">
                 <p>{member.message}</p>
               </div>
             </div>
