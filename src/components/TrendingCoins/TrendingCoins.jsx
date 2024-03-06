@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const TrendingCoins = () => {
   const [trendingCoins, setTrendingCoins] = useState([]);
@@ -6,12 +7,10 @@ const TrendingCoins = () => {
   useEffect(() => {
     const fetchTrendingCoins = async () => {
       try {
-        const response = await fetch(
+        const response = await axios.get(
           "https://api.coingecko.com/api/v3/search/trending"
         );
-        const data = await response.json();
-        // Extracting top 3 trending coins
-        const topTrendingCoins = data.coins.slice(0, 3);
+        const topTrendingCoins = response.data.coins.slice(0, 3);
         setTrendingCoins(topTrendingCoins);
       } catch (error) {
         console.error("Error fetching trending coins:", error);

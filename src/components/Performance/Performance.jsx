@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Performance() {
+  const [bitcoinData, setBitcoinData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true&precision=true"
+        );
+        setBitcoinData(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="performance-section bg-[#f8fafc] rounded-lg lg:p-6 p-4 flex flex-col gap-4">
@@ -51,7 +69,10 @@ export default function Performance() {
                       Bitcoin Price
                     </td>
                     <td className="py-4 text-right border-b border-[#9ca3af]">
-                      $14,815.46
+                      $
+                      {bitcoinData
+                        ? bitcoinData.bitcoin.usd.toLocaleString()
+                        : ""}{" "}
                     </td>
                   </tr>
                   <tr>
@@ -75,7 +96,10 @@ export default function Performance() {
                       Trading Volume
                     </td>
                     <td className="py-5 text-right border-b border-[#9ca3af]">
-                      $23,249,202,782
+                      $
+                      {bitcoinData
+                        ? bitcoinData.bitcoin.usd_24h_vol.toLocaleString()
+                        : ""}{" "}
                     </td>
                   </tr>
                   <tr>
@@ -97,7 +121,10 @@ export default function Performance() {
                       Market Cap
                     </td>
                     <td className="py-4 text-right border-b border-[#9ca3af]">
-                      $323,507,290,047
+                      $
+                      {bitcoinData
+                        ? bitcoinData.bitcoin.usd_market_cap.toLocaleString()
+                        : ""}{" "}
                     </td>
                   </tr>
                   <tr>
@@ -123,8 +150,8 @@ export default function Performance() {
                     <td className="py-3 text-right border-b border-[#9ca3af] text-xs">
                       <div className="flex flex-col">
                         <div className="flex gap-2 justify-end">
-                          <span>$69,044.77</span>
-                          <span>-75.6%</span>
+                          <span className="font-bold">$69,044.77</span>
+                          <span className="text-red-500 font-bold">-75.6%</span>
                         </div>
                         <p>Nov 10, 2021 (about 1 year)</p>
                       </div>
@@ -137,8 +164,10 @@ export default function Performance() {
                     <td className="py-3 text-right lg:border-b lg:border-[#9ca3af] text-xs">
                       <div className="flex flex-col">
                         <div className="flex gap-2 justify-end">
-                          <span>$67.81</span>
-                          <span>24,729.1%</span>
+                          <span className="font-bold">$67.81</span>
+                          <span className="text-green-700 font-bold">
+                            24,729.1%
+                          </span>
                         </div>
                         <p>July 06, 2013 (over 9 years)</p>
                       </div>
